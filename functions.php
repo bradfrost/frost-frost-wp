@@ -136,37 +136,16 @@
 		);
 	}
 
-	/*Add Events Post Type*/
-	register_post_type('events', array(
-		'labels' => array(
-	       'name'          => __('Events'),
-	       'singular_label' => __('Event'),
-			'add_new' => 'Add New',
-		    'add_new_item' =>'Add New',
-		    'edit' => 'Edit',
-		    'edit_new_item' => 'Edits',
-		    'rewrite' => array("slug" => "events")
-	    ),
-		'public' => true,
-		'show_ui' => true,
-		'capability_type' => 'post',
-		'hierarchical' => false,
-		'rewrite' => false,
-		'query_var' => false,
-		'taxonomies' => array('post_tag','category'),
-		'supports' => array('title', 'tags', 'editor', 'thumbnail','custom-fields')
-	));
-
 		/*Add Shops Post Type*/
-	register_post_type('shops', array(
+	register_post_type('songs', array(
 		'labels' => array(
-	       'name'          => __('Shops'),
-	       'singular_label' => __('Shop'),
+	       'name'          => __('Songs'),
+	       'singular_label' => __('Song'),
 			'add_new' => 'Add New',
 		    'add_new_item' =>'Add New',
 		    'edit' => 'Edit',
 		    'edit_new_item' => 'Edits',
-		    'rewrite' => array("slug" => "shops")
+		    'rewrite' => array("slug" => "songs")
 	    ),
 		'public' => true,
 		'show_ui' => true,
@@ -177,27 +156,5 @@
 		'taxonomies' => array('post_tag','category'),
 		'supports' => array('title', 'tags', 'editor', 'thumbnail','custom-fields')
 	));
-
-		/*Add Jewelry Post Type*/
-	register_post_type('jewelry', array(
-		'labels' => array(
-	       'name'          => __('Jewelry'),
-	       'singular_label' => __('Jewelry'),
-			'add_new' => 'Add New',
-		    'add_new_item' =>'Add New',
-		    'edit' => 'Edit',
-		    'edit_new_item' => 'Edits',
-		    'rewrite' => array("slug" => "jewelry")
-	    ),
-		'public' => true,
-		'show_ui' => true,
-		'capability_type' => 'post',
-		'hierarchical' => false,
-		'rewrite' => false,
-		'query_var' => false,
-		'taxonomies' => array('post_tag','category'),
-		'supports' => array('title', 'tags', 'editor', 'thumbnail','custom-fields')
-	));
-
 
 ?>
