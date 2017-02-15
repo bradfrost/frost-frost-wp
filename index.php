@@ -9,16 +9,68 @@
  <div class="lc-single">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<header class="post-header">
-				<h1 class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-				<p class="post-timestamp"><?php the_time('F j, Y'); ?></p>
-			</header>
-
-			<div class="post-content text">
-				<?php the_content(); ?>
-			</div>
-		</article>
+            <ul class="c-crazy-grid">
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+                <li class="c-crazy-grid__item" data-number="3" "title">
+                    <a href="" class="c-crazy-grid__link">Song Link</a>
+                </li>
+            </ul>
 
 	<?php endwhile; ?>
 
@@ -30,4 +82,3 @@
 
 	<?php endif; ?>
 </div>
-<?php get_footer(); ?>
