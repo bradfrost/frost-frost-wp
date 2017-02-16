@@ -3,8 +3,9 @@
  * @package WordPress
  * @subpackage HTML5-Reset-WordPress-Theme
  * @since HTML5 Reset 2.0
+ * Template Name: Homepage
  */
- 
+
  get_header(); ?>
 
  <div class="lc-single">
@@ -20,8 +21,10 @@
              	<?php // loop through the rows of data
                 while ( have_rows('songs') ) : the_row(); ?>
 
+                    <?php $file = get_sub_field('song'); ?>
+
                     <li class="c-crazy-grid__item" title="<?php the_sub_field('song_title'); ?>" data-number="<?php the_sub_field('number_people'); ?>" data-genre="<?php the_sub_field('song_genre'); ?>">
-                        <a href="#" class="c-crazy-grid__link"><?php the_sub_field('song_title'); ?></a>
+                        <a href="<?php echo $file['url']; ?>" class="c-crazy-grid__link js-audio-player-trigger"><?php the_sub_field('song_title'); ?></a>
                     </li>
 
                 <?php endwhile;
@@ -44,3 +47,5 @@
 
 	<?php endif; ?>
 </div>
+
+<?php  get_footer(); ?>

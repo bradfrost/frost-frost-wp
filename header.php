@@ -19,7 +19,7 @@
 				</div><!-- .wrap -->
 			</div><!-- .site-branding -->
 
-			<audio src="" controls></audio>
+			<audio src="/wp-content/themes/frostfrost/media/120.mp3" class="c-audio-player js-audio-player" controls></audio>
 
 			<nav id="nav" class="c-primary-nav">
 
