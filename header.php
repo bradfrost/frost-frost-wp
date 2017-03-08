@@ -9,7 +9,7 @@
 		<img class="c-header__image" src="wp-content/themes/frostfrost/images/recordplayer.svg" />
 		<div class="c-header-nav-container">
 			<h1 class="c-logo">
-				<a href="#" class="c-logo" rel="home">
+				<a href="#" class="c-logo__link" rel="home">
 					<img src="/wp-content/themes/frostfrost/images/logo.png" alt="Frost Frost Logo" />
 				</a>
 			</h1><!-- end c-logo -->
