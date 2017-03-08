@@ -29,6 +29,7 @@
 
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.js"></script>

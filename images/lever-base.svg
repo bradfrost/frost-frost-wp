@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="63px" height="265px" viewBox="0 0 63 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="84px" height="351px" viewBox="0 0 84 351" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
     <title>Group 3</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="77.8001435%" id="linearGradient-1">
+            <stop stop-color="#847E7E" offset="0%"></stop>
+            <stop stop-color="#B3ABAB" offset="17.313058%"></stop>
+            <stop stop-color="#7E7474" offset="32.5135523%"></stop>
+            <stop stop-color="#B3ABAB" offset="51.2316645%"></stop>
+            <stop stop-color="#847E7E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="75.7988052%" id="linearGradient-2">
+            <stop stop-color="#A69D9D" offset="0%"></stop>
+            <stop stop-color="#BAB3B3" offset="8.43829719%"></stop>
+            <stop stop-color="#7F7F7F" offset="22.1022003%"></stop>
+            <stop stop-color="#CDC4C4" offset="70.0255102%"></stop>
+            <stop stop-color="#797777" offset="76.2575733%"></stop>
+            <stop stop-color="#A69D9D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#A69D9D" offset="0%"></stop>
+            <stop stop-color="#CDC4C4" offset="27.8001435%"></stop>
+            <stop stop-color="#7F7F7F" offset="48.0389031%"></stop>
+            <stop stop-color="#CDC4C4" offset="73.431521%"></stop>
+            <stop stop-color="#A69D9D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-3" fill="#D8D8D8">
-            <g id="Group-2" transform="translate(0.000000, 228.000000)">
-                <path d="M63,31.5 C63,14.1030304 48.8969696,0 31.5,0 C14.1030304,0 4.56168089e-13,14.1030304 4.56168089e-13,31.5 C4.56168089e-13,33.7793465 4.54747351e-13,36.3515625 4.54747351e-13,36.3515625 C4.54747351e-13,36.3515625 20.7094545,36.0465017 31.5,36.3515625 C44.5897378,36.721624 63,36.3515625 63,36.3515625 C63,36.3515625 63,33.3944378 63,31.5 Z" id="Oval-2"></path>
-            </g>
-            <rect id="Rectangle-2" x="25" y="0.134129435" width="14" height="250" rx="4"></rect>
+        <g id="Group-3" transform="translate(0.435811, 0.637291)">
+            <g id="Group-2" transform="translate(0.000000, 271.077725)"></g>
+            <path d="M34,4.95118229 C34,2.74445754 35.7859656,0.906756275 37.9967868,0.858614409 C37.9967868,0.858614409 44.3822618,0.629909865 47.1325486,0.955553676 C49.8828354,1.28119749 51.3291696,10.1547724 51.3291696,10.1547724 L51.3291696,306.272106 C51.3291696,308.482152 49.5399138,310.273748 47.3317492,310.273748 L37.9974204,310.273748 C35.7897061,310.273748 34,308.476628 34,306.278119 L34,4.95118229 Z" id="Rectangle-2" fill="url(#linearGradient-1)"></path>
+            <path d="M29.7071479,4.16334934 C29.7071479,1.95568814 31.4964038,0.166025123 33.7045683,0.166025123 L43.0388972,0.166025123 C45.2466115,0.166025123 47.0363176,1.96354704 47.0363176,4.17524298 L47.0363176,233.987709 L47.0363176,305.616102 C47.0363176,307.824899 45.2470617,309.615483 43.0388972,309.615483 L33.7045683,309.615483 C31.496854,309.615483 29.7071479,307.817601 29.7071479,305.618159 L29.7071479,4.16334934 Z" id="Rectangle-2" fill="url(#linearGradient-2)" style="mix-blend-mode: luminosity;"></path>
+            <ellipse id="Oval-3" fill="#C2C1C1" style="mix-blend-mode: luminosity;" cx="43.9906317" cy="311.068357" rx="38.9906317" ry="38.9906317"></ellipse>
+            <ellipse id="Oval-3" fill="url(#linearGradient-3)" cx="38.9906317" cy="310.068357" rx="38.9906317" ry="38.9906317"></ellipse>
+            <ellipse id="Oval-3" stroke="#979797" cx="38.4611375" cy="309.461138" rx="29.4611375" ry="29.4611375"></ellipse>
         </g>
     </g>
 </svg>

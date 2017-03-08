@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>recordplayer</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="11.1997089%" x2="50%" y2="81.7502392%" id="linearGradient-2">
+            <stop stop-color="#C7C0C0" offset="0%"></stop>
+            <stop stop-color="#767070" offset="20.7908163%"></stop>
+            <stop stop-color="#959090" offset="33.2529496%"></stop>
+            <stop stop-color="#8D8484" offset="37.1432557%"></stop>
+            <stop stop-color="#CDBEBE" offset="67.2373246%"></stop>
+            <stop stop-color="#746F6F" offset="77.3736448%"></stop>
+            <stop stop-color="#B3A9A9" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-3" x="0.100538328" y="0.98682317" width="781.453468" height="575.946801" rx="28"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="781.453468" height="575.946801" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="recordplayer" filter="url(#filter-1)" transform="translate(4.000000, 1.000000)">
+            <path d="M8.94086358,20.4034942 C14.3893509,11.3404187 31.3483202,3.99334443 46.8062082,3.99334443 L746.929756,3.99334443 C746.929756,3.99334443 724.82115,3.99334443 754.257275,3.99334443 C768.780709,3.99334443 773.507507,3.15349159 786.288807,16.8959404 C799.070106,30.6383891 799.070106,59.8900211 799.070106,59.8900211 L797.651577,571.905448 C797.60875,587.363847 785.034205,599.895355 769.570934,599.895355 L46.8389153,599.895355 C46.8389153,599.895355 20.6306578,598.626169 8.94086358,587.485701 C-2.74893061,576.345233 0.825250313,556.043963 0.825250313,556.043963 L8.94086358,20.4034942 L8.94086358,20.4034942 Z" id="Rectangle" fill="#424242" style="mix-blend-mode: luminosity;"></path>
+            <use id="Rectangle" stroke="#242424" mask="url(#mask-4)" stroke-width="2" fill="url(#linearGradient-2)" xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>
