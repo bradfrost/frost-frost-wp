@@ -24,7 +24,7 @@
 
                     <?php $file = get_sub_field('song'); ?>
 
-                    <li class="c-crazy-grid__item js-crazy-grid-item <?php if($i < 1) echo 'is-active is-stopped' ?>">
+                    <li class="c-crazy-grid__item js-crazy-grid-item <?php if($i < 1) echo 'is-active is-stopped' ?>" title="<?php the_sub_field('song_title'); ?>" data-number="<?php the_sub_field('number_people'); ?>" data-genre="<?php the_sub_field('song_genre'); ?>">
                         <a href="<?php echo $file['url']; ?>" class="c-crazy-grid__link js-audio-player-trigger"><?php the_sub_field('song_title'); ?></a>
                             <svg class="c-crazy-grid__image" width="368px" height="368px" viewBox="0 0 368 368" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
