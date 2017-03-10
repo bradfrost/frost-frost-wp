@@ -7,14 +7,14 @@
 	<header id="masthead" class="c-header js-header" role="banner">
 
 		<img class="c-header__image" src="wp-content/themes/frostfrost/images/recordplayer.svg" />
-		<div class="c-header-nav-container">
+		<div class="c-header-logo-audio">
 			<h1 class="c-logo">
 				<a href="#" class="c-logo__link" rel="home">
 					<img src="/wp-content/themes/frostfrost/images/logo.png" alt="Frost Frost Logo" />
 				</a>
 			</h1><!-- end c-logo -->
 
-			<div class="c-header-nav-audio">
+			<div class="c-header-audio">
 
 				<ul class="c-button-bar">
 
