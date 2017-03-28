@@ -104,13 +104,14 @@
 	    	</nav><!-- end c-primary-nav -->
 
 
-			<?php if( have_rows('songs') ): ?>
+			<?php $args = array( 'numberposts' => -1, 'post_type' => 'songs', 'orderby' => 'menu_order',
+			    'order' => 'ASC' );
+			    $myposts = get_posts( $args ); ?>
 
-			<?php // loop through the rows of data
-			while ( have_rows('songs') ) : the_row(); ?>
+			<?php foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 			<div class="c-crazy-grid__item is-active is-stopped js-crazy-grid-item">
 
-				<a href="<?php echo $file['url']; ?>" class="c-crazy-grid__link js-audio-player-trigger"><?php the_sub_field('song_title'); ?></a>
+				<a href="<?php echo $file['url']; ?>" class="c-crazy-grid__link js-audio-player-trigger"><?php the_title(); ?></a>
 				<svg class="c-crazy-grid__image" width="456px" height="456px" viewBox="0 0 456 456" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
 				    <title>Record</title>
@@ -132,7 +133,7 @@
 				    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 				        <g id="Record" transform="translate(0, 0)">
 				            <ellipse id="Oval" fill="#000000" cx="227.754801" cy="227.636783" rx="227.754801" ry="227.636783"></ellipse>
-				            <ellipse class="c-crazy-grid__fill <?php if (get_sub_field('song_genre') == "funk") { ?><?php echo 'c-crazy-grid__fill--funk'?><?php } ?><?php if (get_sub_field('song_genre') == "rock") { ?><?php echo 'c-crazy-grid__fill--rock'?><?php } ?><?php if (get_sub_field('song_genre') == "electronica") { ?><?php echo 'c-crazy-grid__fill--electronica'?><?php } ?> js-crazy-grid-item" title="<?php the_sub_field('song_title'); ?>" data-number="<?php the_sub_field('number_people'); ?>" data-genre="<?php the_sub_field('song_genre'); ?>" id="Oval" fill="#4990E2" cx="227.754801" cy="227.636783" rx="101.499422" ry="101.446827"></ellipse>
+				            <ellipse class="c-crazy-grid__fill <?php if (get_field('song_genre') == "funk") { ?><?php echo 'c-crazy-grid__fill--funk'?><?php } ?><?php if (get_field('song_genre') == "rock") { ?><?php echo 'c-crazy-grid__fill--rock'?><?php } ?><?php if (get_field('song_genre') == "electronica") { ?><?php echo 'c-crazy-grid__fill--electronica'?><?php } ?> js-crazy-grid-item" title="<?php the_field('song_title'); ?>" data-people="<?php the_field('song_people'); ?>" data-genre="<?php the_field('song_genre'); ?>" id="Oval" fill="#4990E2" cx="227.754801" cy="227.636783" rx="101.499422" ry="101.446827"></ellipse>
 				            <ellipse id="Oval" stroke="#000000" fill="#FFFFFF" cx="227.135902" cy="227.018204" rx="10.5212816" ry="10.5158296"></ellipse>
 				            <ellipse id="Oval" stroke="#FFFBFB" cx="228.3737" cy="227.018204" rx="112.020704" ry="111.962657"></ellipse>
 				            <ellipse id="Oval" stroke="#FFFBFB" cx="228.992599" cy="226.399626" rx="122.541985" ry="122.478486"></ellipse>
@@ -154,14 +155,9 @@
 				</svg>
 
 			</div>
-		<?php break;
-		endwhile;
-		reset_rows();
-	else :
-
-		// no rows found
-
-	endif; ?>
+		<?php break; ?>
+		<?php endforeach;
+		reset_rows(); ?>
 
 			<div class="c-lever js-lever">
 				<img class="c-lever__image" src="wp-content/themes/frostfrost/images/lever.svg" />

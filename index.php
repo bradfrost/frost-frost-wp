@@ -18,7 +18,7 @@
         <?php $i=0; ?>
         <?php foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
         <?php $file = get_field('song'); ?>
-        <li class="c-crazy-grid__item js-crazy-grid-item <?php if($i < 1) echo 'is-active is-stopped' ?>" title="<?php the_title(); ?>" data-description="<?php the_field('song_description'); ?>" data-number="<?php the_field('song_people'); ?>" data-genre="<?php the_sub_field('song_genre'); ?>" data-quality="<?php the_sub_field('song_quality'); ?>">
+        <li class="c-crazy-grid__item js-crazy-grid-item <?php if($i < 1) echo 'is-active is-stopped' ?>" title="<?php the_title(); ?>" data-description="<?php the_field('song_description'); ?>" data-people="<?php the_field('song_people'); ?>" data-genre="<?php the_field('song_genre'); ?>" data-quality="<?php the_field('song_quality'); ?>">
             <a href="<?php echo $file['url']; ?>" class="c-crazy-grid__link js-audio-player-trigger"><?php the_title(); ?></a>
             <svg class="c-crazy-grid__image" width="368px" height="368px" viewBox="0 0 368 368" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
@@ -41,7 +41,7 @@
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Record" transform="translate(0, 0)">
                     <ellipse id="Oval" fill="#000000" cx="184" cy="183.501355" rx="184" ry="183.501355"></ellipse>
-                    <ellipse class="c-crazy-grid__fill <?php if (get_field('song_genre') == "funk") { ?><?php echo 'c-crazy-grid__fill--funk'?><?php } ?><?php if (get_field('song_genre') == "rock") { ?><?php echo 'c-crazy-grid__fill--rock'?><?php } ?><?php if (get_field('song_genre') == "electronica") { ?><?php echo 'c-crazy-grid__fill--electronica'?><?php } ?> js-crazy-grid-item" title="<?php the_sub_field('song_title'); ?>" data-number="<?php the_field('number_people'); ?>" data-genre="<?php the_field('song_genre'); ?>" id="Oval" cx="184" cy="183.501355" rx="82" ry="81.7777778"></ellipse>
+                    <ellipse class="c-crazy-grid__fill <?php if (get_field('song_genre') == "funk") { ?><?php echo 'c-crazy-grid__fill--funk'?><?php } ?><?php if (get_field('song_genre') == "rock") { ?><?php echo 'c-crazy-grid__fill--rock'?><?php } ?><?php if (get_field('song_genre') == "electronica") { ?><?php echo 'c-crazy-grid__fill--electronica'?><?php } ?> js-crazy-grid-item" title="<?php the_field('song_title'); ?>" data-number="<?php the_field('song_people'); ?>" data-genre="<?php the_field('song_genre'); ?>" id="Oval" cx="184" cy="183.501355" rx="82" ry="81.7777778"></ellipse>
                     <ellipse id="Oval" stroke="#000000" fill="#FFFFFF" cx="183.5" cy="183.00271" rx="8.5" ry="8.47696477"></ellipse>
                     <ellipse id="Oval" stroke="#FFFBFB" cx="184.5" cy="183.00271" rx="90.5" ry="90.2547425"></ellipse>
                     <ellipse id="Oval" stroke="#FFFBFB" cx="185" cy="182.504065" rx="99" ry="98.7317073"></ellipse>
